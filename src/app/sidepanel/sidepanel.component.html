@@ -1,0 +1,43 @@
+<div style="text-align: center;">
+  <br>
+  <h3>Factory Resources</h3>
+</div>
+<span style="text-align: center; display: inline-block; width: 100%;">
+  <mat-form-field style="width: 90%;">
+    <input matInput placeholder=" Filter">
+  </mat-form-field>
+</span>
+<div style="width: 90%; margin: 0 auto;">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Pipelines ({{pipeline.length}})
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ol>
+        <li *ngFor="let item of pipeline">{{item}}</li>
+      </ol>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Datasets ({{dataset.length}})
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ol>
+        <li *ngFor="let item of dataset">{{item}}</li>
+      </ol>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Dataflow ({{dataflow.length}})
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <ol>
+        <li *ngFor="let item of dataflow">{{item}}</li>
+      </ol>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

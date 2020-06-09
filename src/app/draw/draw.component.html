@@ -1,0 +1,38 @@
+<div cdkDropListGroup style="height: 100%;">
+  <mat-grid-list cols="10" rowHeight="100%">
+    <mat-grid-tile [colspan]="2" [rowspan]="1" style="background-color: rgba(208, 255, 253, 0.568);">
+      <div cdkDropList class="box-container" [cdkDropListData]="stageOne" (cdkDropListDropped)="drop($event)">
+        <div class="box" *ngFor="let item of stageOne" cdkDrag>{{item}}</div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1" style="background-color: rgba(158, 219, 255, 0.5);">
+      <div cdkDropList class="box-container" [cdkDropListData]="stageTwo" (cdkDropListDropped)="drop($event)">
+        <div class="box" *ngFor="let item of stageTwo" cdkDrag>
+          {{item}}
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1" style="background-color: rgba(175, 194, 255, 0.514);">
+      <div cdkDropList class="box-container" [cdkDropListData]="stageThree" (cdkDropListDropped)="drop($event)">
+        <div class="box" *ngFor="let item of stageThree" cdkDrag>
+          {{item}}
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1" style="background-color: rgba(157, 122, 255, 0.26);">
+      <div cdkDropList class="box-container" [cdkDropListData]="stageFour" (cdkDropListDropped)="drop($event)">
+        <div class="box" *ngFor="let item of stageFour" cdkDrag>
+          {{item}}
+        </div>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="2" [rowspan]="1" style="background-color: rgba(209, 130, 255, 0.212);">
+      <div cdkDropList class="box-container" [cdkDropListData]="stageFive" (cdkDropListDropped)="drop($event)">
+        <div class="box" *ngFor="let item of stageFive" cdkDrag>
+          {{item}}
+        </div>
+      </div>
+    </mat-grid-tile>
+
+  </mat-grid-list>
+</div>
